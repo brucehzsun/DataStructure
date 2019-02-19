@@ -7,7 +7,7 @@ using namespace std;
  * @param data
  * @param length
  */
-void insertSort(int *data, int length) {
+void insertSort(int data[], int length) {
     int key;
     for (int i = 1; i < length; i++) {
         key = data[i];
@@ -24,7 +24,7 @@ int main() {
     int data[] = {1, 3, 4, 2, 9, 30, 10};
     int length = sizeof(data) / sizeof(data[0]);
     cout << "len = " << length << endl;
-    insertSort(&data[0], length);
+    insertSort(data, length);
 
     for (int i = 0; i < length; i++) {
         std::cout << data[i] << std::endl;
